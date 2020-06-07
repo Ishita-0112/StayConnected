@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css">
+    <link href="{% static 'css/button.css' %}" rel="stylesheet">
+
 
     <!-- using local links -->
     <!-- <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -60,9 +62,9 @@
 
 }
 
-button {
+{% comment %} button {
     background: -webkit-linear-gradient(left, #ddd6f3  0%,#faaca8 100%) !important;
-}
+} {% endcomment %}
 
 .button  {
   border-radius: 0.6em;
@@ -628,6 +630,16 @@ img.img-fluid{
                                     <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a>
                                         {% comment %} <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> {% endcomment %}
                                         {% comment %} <button class="button" data-toggle="modal" data-target="#modal-info">BOOK NOW</button> {% endcomment %}
+<div id="container" style="margin-top:20px">
+
+  <button class="learn-more">
+    <span class="circle" aria-hidden="true">
+      <span class="icon arrow"></span>
+    </span>
+    <span class="button-text">Learn More</span>
+  </button>
+
+  </div>
                                     </div>
                                 </div>
                             </div>
