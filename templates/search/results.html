@@ -1,0 +1,431 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>EVENTS</title>
+
+
+    <!-- partial:index.partial.html -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css">
+
+    <!-- using local links -->
+    <!-- <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css"> -->
+
+    <link rel="stylesheet" href="{% static 'css/33.css' %}">
+    <link rel="stylesheet" href="{% static 'css/34.css' %}">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <!--    <link href="css/bootstrap.min.css" rel="stylesheet">-->
+    <!-- Material Design Bootstrap -->
+    <link href="{% static 'css/35.css' %}" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="{% static 'css/36.css' %}" rel="stylesheet">
+    <link href="{% static 'css/37.css' %}" rel="stylesheet">
+
+    <link href="{% static 'css/38.css' %}" rel="stylesheet">
+
+    <link href="{% static 'css/39.css' %}" rel="stylesheet">
+    <link href="{% static 'css/40.css' %}" rel="stylesheet">
+    <link href="{% static 'css/41.css' %}" rel="stylesheet">
+    <link href="{% static 'css/42.css' %}" rel="stylesheet">
+    <link href="{% static 'css/43.css' %}" rel="stylesheet">
+    <link href="{% static 'css/82.css' %}" rel="stylesheet">
+
+
+
+    <style type="text/css">
+        html,
+        body,
+        header,
+        .carousel {
+            height: 60vh;
+        }
+
+        @media (max-width: 740px) {
+
+            html,
+            body,
+            header,
+            .carousel {
+                height: 100vh;
+            }
+        }
+
+        @media (min-width: 800px) and (max-width: 850px) {
+
+            html,
+            body,
+            header,
+            .carousel {
+                height: 100vh;
+            }
+        }
+
+    </style>
+
+    <style>
+    .card.profile-card-2{
+
+
+    background-color:#f0f3f4;
+    height:700px;
+    
+
+}
+
+button {
+    background: -webkit-linear-gradient(left, #ddd6f3  0%,#faaca8 100%) !important;
+}
+
+.button  {
+  border-radius: 0.6em;
+  cursor: pointer;
+  line-height: 1;
+  margin-top:40px;
+  padding: 1.2em 2.8em;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+
+
+}
+      
+
+.buttonss{
+  border-radius: 0.6em !important;
+  cursor: pointer;
+  line-height: 1;
+  margin-top:1px;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+
+
+}
+nav{
+
+  background: -webkit-linear-gradient(0deg, #bfacff 0%, #795fff 100%) !important;
+
+
+        }
+
+
+.navbar-light .navbar-nav .nav-link {
+  color:#fff;
+
+
+        }
+
+        .navbar.navbar-light .breadcrumb .nav-item .nav-link, .navbar.navbar-light .navbar-nav .nav-item .nav-link {
+              color:#fff;
+        }
+
+</style>
+</head>
+
+
+
+
+<body>
+    <div class="row">
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar navvy">
+            <div class="container">
+
+                <!-- Brand -->
+                <a class="navbar-brand waves-effect" href="/">
+                    <strong class="blue-text">WOW</strong>
+                </a>
+
+                <!-- Collapse -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Links -->
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <!-- Left -->
+                   <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+       
+                    </li>
+                    <a class="nav-link waves-effect" href="{% url 'about' %}">ABOUT
+                        <span class="sr-only">(current)</span>
+                    </a>
+                    <a class="nav-link waves-effect" href="{% url 'communities:list' %}">COMMUNITIES
+
+                    </a>
+                    <a class="nav-link waves-effect" href="{% url 'jobs:list' %}">JOBS
+                        <span class="sr-only">(current)</span>
+                    </a>
+                    <a class="nav-link waves-effect" href="{% url 'meetups:list' %}">MEETUPS
+                        <span class="sr-only">(current)</span>
+                    </a>
+                    <a class="nav-link waves-effect" href="{% url 'events:list' %}">EVENTS
+                        <span class="sr-only">(current)</span>
+                    </a>
+                    
+                    <a class="nav-link waves-effect" href="{% url 'contact' %}">CONTACTS
+                        <span class="sr-only">(current)</span>
+                    </a>
+
+
+                </ul>
+
+                    <!-- Right -->
+                    <ul class="navbar-nav nav-flex-icons">
+
+                     <form action="{% url 'search:results' %}" method="POST" class="form-inline">{% csrf_token %}
+    <div class="form-group">
+        <input type="text" class="form-control mr-2" name="q" placeholder="Search..." required/>
+        <button name="submit" class="buttonss">Search</button>
+    </div>
+</form>
+                        </li>
+
+
+
+                            {% if request.user.is_authenticated %}
+                        <li class="nav-item">
+                            <a href="{% url 'about' %}" class="nav-link waves-effect">
+                                <span class="badge red z-depth-1 mr-1"></span>
+                                <i class=""></i>
+                                <span class="clearfix d-none d-sm-inline-block"> About Us</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect" href="{% url 'logout' %}">
+                                <span class="clearfix d-none d-sm-inline-block">  Welcome <b>{{ request.user.username }}</b> </span>
+                            </a>
+                        </li>
+                         {% else %}
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect" href="{% url 'login' %}">
+                                <span class="clearfix d-none d-sm-inline-block"> Sign In </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect" href="{% url 'register' %}">
+                                <span class="clearfix d-none d-sm-inline-block"> Signup </span>
+                            </a>
+                        </li>
+                               {% endif %}
+                    </ul>
+                </div>
+
+
+
+
+
+            </div>
+        </nav>
+    </div>
+    <br><br><br><br><br>
+  
+
+    <div>
+    {% if total == 0 %}
+
+    
+        <h3>Sorry No results found for <strong>{{ query }}</strong> ! :(</h3>
+    {% else %}
+        <h3>Showing {{ total }} results for <strong>{{ query }}</strong> !</h3>
+    {% endif %}
+    <p>
+        {{ jobs.count }} Jobs Found | {{ events.count }} events Found | {{ communities.count }} Communities Found
+        | {{ meetups.count }} Meetups Found
+    </p>
+
+    </div>
+    <hr>
+
+    <br>
+    {% if jobs.count > 0 %}
+    <h2>Jobs</h2>
+    <div style="display: flex; flex-wrap: nowrap;">
+        {% for job in jobs %}
+            {% comment %} <div style="border: 1px solid #5f5f5f;border-radius: 4px;padding: 10px;max-width: 300px; margin: 20px;">
+                {{ job.role }}<br>
+                <hr>
+                {{ job.title }}<br><br>
+
+                {{ job.seniority }}<br><br>
+                {{ job.description|truncatechars:100 }}<br><br>
+                {{ job.timestamp }}
+                <hr>
+                <a role="button" href="/jobs/{{ job.id }}">View Details</a>
+            </div> {% endcomment %}
+
+
+
+            <div class="col-4">
+
+                            <div class="card profile-card-2 toggle">
+                                <div class="card-img-block">
+                                   <a href="/jobs/{{ job.id }}"> <img class="img-fluid" src="https://images.pexels.com/photos/870903/pexels-photo-870903.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Card image cap"></a>
+                                </div>
+                                <div class="card-body pt-5">
+                                    <img src="https://randomuser.me/api/portraits/men/64.jpg" alt="profile-image" class="profile" />
+                                    <h5 class="card-title">{{job.title}}</h5>
+                                    <p class="card-text">{{job.description|truncatechars:100}}</p>
+                                    <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a>
+                                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><button class="button" data-toggle="modal" data-target="#modal-info">BOOK NOW</button></div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    <br>
+
+
+
+    {% if events.count > 0 %}
+    <h2>Events</h2>
+    <div style="display: flex; flex-wrap: nowrap;">
+        {% for event in events %}
+            {% comment %} <div style="border: 1px solid #5f5f5f;border-radius: 4px;padding: 10px;max-width: 300px; margin: 20px;">
+                <strong>{{ event.title }}</strong> | {{ event.venue }} | {{ event.members }} Members<br>
+                <hr>
+                <strong>Description:</strong> {{ event.description|truncatechars:50 }}<br><br>
+                <strong>Time:</strong>{{ event.time }} | {{ event.date }}<br><br>
+                <strong>Added on:</strong> {{ event.date_added }}<br>
+                <hr>
+                <a role="button" href="/events/{{ event.id }}">View Details</a>
+            </div> {% endcomment %}
+
+
+
+            <div class="col-4">
+
+                            <div class="card profile-card-2 toggle">
+                                <div class="card-img-block">
+                                   <a href="/events/{{ event.id }}"> <img class="img-fluid" src="https://images.pexels.com/photos/870903/pexels-photo-870903.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Card image cap"></a>
+                                </div>
+                                <div class="card-body pt-5">
+                                    <img src="https://randomuser.me/api/portraits/men/64.jpg" alt="profile-image" class="profile" />
+                                    <h5 class="card-title">{{event.title}}</h5>
+                                    <p class="card-text">{{event.description|truncatechars:10}}</p>
+                                    <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a>
+                                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><button class="button" data-toggle="modal" data-target="#modal-info">BOOK NOW</button></div>
+                                </div>
+                            </div>
+
+
+                        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+    <br>
+    {% if communities.count > 0 %}
+        <h2>Communities</h2>
+        <div style="display: flex; flex-wrap: nowrap;">
+            {% for community in communities %}
+                {% comment %} <div style="border: 1px solid #5f5f5f;border-radius: 4px;padding: 10px;max-width: 300px; margin: 20px;">
+                    <strong>{{ community.title }} | By {{ community.user }}</strong>
+                    <hr>
+                    <strong>Description:</strong> {{ community.description|truncatechars:100 }}<br><br>
+                    <strong>Added on:</strong> {{ community.timestamp }}<br><br>
+                    <strong>{{ community.comments }} Comments</strong><br>
+                    <strong>{{ community.likes }} Like</strong> <br><br>
+                    <hr>
+                    <a role="button" href="/communities/{{ community.id }}">View Details</a>
+                </div> {% endcomment %}
+
+
+                 <div class="col-4">
+
+                            <div class="card profile-card-2 toggle">
+                                <div class="card-img-block">
+                                   <a href="/communities/{{ community.id }}"> <img class="img-fluid" src="https://images.pexels.com/photos/870903/pexels-photo-870903.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Card image cap"></a>
+                                </div>
+                                <div class="card-body pt-5">
+                                    <img src="https://randomuser.me/api/portraits/men/64.jpg" alt="profile-image" class="profile" />
+                                    <h5 class="card-title">{{community.title}}</h5>
+                                    <p class="card-text">{{community.description|truncatechars:10}}</p>
+                                    <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a>
+                                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><button class="button" data-toggle="modal" data-target="#modal-info">BOOK NOW</button></div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                
+            {% endfor %}
+        </div>
+    {% endif %}
+
+
+    <br>
+
+
+
+    {% if meetups.count > 0 %}
+    <h2>Meetups</h2>
+    <div style="display: flex; flex-wrap: nowrap;">
+        {% for meetup in meetups %}
+            {% comment %} <div style="border: 1px solid #5f5f5f;border-radius: 4px;padding: 10px;max-width: 300px; margin: 20px;">
+                {{ meetup.title }}<br>
+                <hr>
+                {{ meetup.address }}<br>
+                {{ meetup.location }}<br><br>
+                {{ meetup.attendees }}<br><br>
+                {{ meetup.date }}
+                {{ meetup.time }}<br>
+                {{ meetup.description|truncatechars:100 }}<br><br>
+                <hr>
+                <a role="button" href="/meetups/meetup/{{ meetup.id }}">View Details</a>
+            </div> {% endcomment %}
+
+
+
+             <div class="col-4">
+
+                            <div class="card profile-card-2 toggle">
+                                <div class="card-img-block">
+                                   <a href="/meetups/meetup/{{ meetup.id }}"> <img class="img-fluid" src="https://images.pexels.com/photos/870903/pexels-photo-870903.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Card image cap"></a>
+                                </div>
+                                <div class="card-body pt-5">
+                                    <img src="https://randomuser.me/api/portraits/men/64.jpg" alt="profile-image" class="profile" />
+                                    <h5 class="card-title">{{meetup.title}}</h5>
+                                    <p class="card-text">{{meetup.description|truncatechars:10}}</p>
+                                    <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a>
+                                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><button class="button" data-toggle="modal" data-target="#modal-info">BOOK NOW</button></div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+
+
+        {% endfor %}
+    </div>
+    {% endif %}

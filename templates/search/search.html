@@ -1,0 +1,7 @@
+{% load crispy_forms_tags %}
+<form action="{% url 'search:results' %}" method="POST" class="form-inline">{% csrf_token %}
+    <div class="form-group">
+        <input type="text" class="form-control mr-2" name="q" placeholder="Search..." required/>
+        <button name="submit" class="btn btn-primary">Search</button>
+    </div>
+</form>
