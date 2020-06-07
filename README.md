@@ -1,5 +1,5 @@
-<h1>WOW (Women of the World) </h1>
+<h1>Stay Connected </h1>
 <h3>Django Commands</h3>
 <p>
-Live link: https://womensoftheworld.herokuapp.com
+Live link: 
 </p>
